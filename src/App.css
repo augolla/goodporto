@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.App{
+  font-family: 'Nunito', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Home{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
+}
+.Home .left{
+  float: left;
+  position: absolute;
+  left:1%;
+}
+.Home .right{
+  float: right;
+  position: absolute;
+  right:1%;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover{
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn{
+  background:#212022;
+  animation-duration: 1.8s;
+  animation-iteration-count: 10;
+  color:#CACACA;
+  transition: .4s;
+}
+.btn:hover{
+  background-color: #F8DE08;
+  color:#212022;
+  border-color: #212022;
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width:740px){ /*740px and beloww */
+  .Home{
+    padding-top:200px;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-nav a{
+    margin:0px 8px;
+    font-size: 14px;
   }
 }
+
+@media only screen and (min-width:740px){ /*740px and above */
+  .Home{
+    padding-top:200px;
+  }
+  .navbar-nav a{
+    margin:0px 10px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:990px){ /*990 and above */
+  .Home{
+    padding-top:200px;
+  }
+  .navbar-nav a{
+    margin:0px 10px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:1200px){ /*1200 and above */
+  .Home{
+    padding-top:200px;
+  }
+  .navbar-nav a{
+    margin:0px 12px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width:1300px){ /*1300 and above */
+  .Home{
+    padding-top:200px;
+  }
+  .navbar-nav a{
+    margin:0px 14px;
+    font-size: 20px;
+  }
+}
+
+
+/* @media only screen and (min-width:768px){ /*768px and above */
+  /*.Home{
+    padding-top:200px;
+  }
+  .navbar-nav a{
+    margin:0px 25px;
+    font-size: 20px;
+  }
+} */
