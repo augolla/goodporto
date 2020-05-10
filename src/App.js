@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
 import './NavBar.css'
 import {BrwowserRouter,Switch,Route} from 'react-router-dom'
