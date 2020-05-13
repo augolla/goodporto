@@ -5,7 +5,7 @@ import NavBar from './NavBar/NavBar'
 import Home from './Home/Home'
 import About from './About/About'
 import Projects from './Projects/Projects'
-import Contacts from './Contacts'
+import Contacts from './Contacts/Contacts'
 import $ from 'jquery'
 
 

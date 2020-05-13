@@ -6,7 +6,7 @@ import {BrwowserRouter,Switch,Route} from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import Home from './components/Home/Home'
 import Projects from './components/Projects/Projects'
-import Contacts from './components/Contacts'
+import Contacts from './components/Contacts/Contacts'
 import About from './components/About/About'
 import Whole from './components/Whole'
 

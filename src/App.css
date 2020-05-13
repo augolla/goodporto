@@ -18,22 +18,30 @@
   right:1%;
 }
 
+.main p{
+  transition: .4s;
+}
+.main p:hover{
+  text-shadow: -3px 0px 18px #F8DE08;
+}
+
 a:hover{
   color: red;
 }
 
 .btn{
   background:#212022;
-  animation-duration: 1.8s;
-  animation-iteration-count: 10;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
   color:#CACACA;
   transition: .4s;
 }
-.btn:hover{
+.homebtn:hover{
   background-color: #F8DE08;
   color:#212022;
   border-color: #212022;
   transform: scale(1.2);
+  box-shadow:0px 0px 50px #F8DE08;
 }
 
 @media only screen and (max-width:740px){ /*740px and beloww */
@@ -96,3 +104,31 @@ a:hover{
     font-size: 20px;
   }
 } */
+
+.AboutMe h2{
+  font-size: 2.5rem;
+  font-family: arial;
+  font-weight: normal;
+}
+.AboutMe p{
+  color: #2B2B2B;
+  font-size: 1.2rem;
+  font-weight:100;
+}
+.AboutMe a{
+  color: #F8DE08;
+  transition: all .25s ease-in-out;
+  font-family:courier;
+}
+.AboutMe a:hover{
+  text-decoration: none;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}
+
+
+input:focus,textarea:focus{
+  outline:0px;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+}

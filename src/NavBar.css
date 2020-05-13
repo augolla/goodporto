@@ -21,3 +21,37 @@ nav a.active{
   transform: scale(1.2);
   font-weight: bold;
 }
+.bars{
+  transition: .3s ease;
+}
+.bars:hover{
+  transform: scale(1.4);
+}
+
+
+/*NavIcon*/
+.NavIcon{
+  position: relative;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 2.3rem;
+  height: 1.8rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border: 1px solid #212022;
+}
+.NavIcon:hover{
+  transform: scale(1.2);
+}
+.NavIcon:hover>.burgerline{
+}
+.burgerline{
+  width:2rem;
+  height:.15rem;
+  background: white;
+  border-radius: 10px;
+  transition: all .3s;
+  margin-bottom: .6rem;
+  cursor: pointer;
+}
