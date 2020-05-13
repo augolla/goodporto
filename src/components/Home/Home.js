@@ -19,8 +19,8 @@ function Home() {
           <p>&nbsp;Data Scientist</p>
         </div>
         <div className='d-flex align-items-centre justify-content-center mt-5'>
-          <span className='homebtn btn animated pulse'title='See projects and Skills'
-            style={{borderColor:"#F8DE08",borderWidth:'1.3px',borderRadius:'2px',fontWeight:'bold',cursor:'pointer'}}>
+          <span className='homebtn btn animated pulse'title='See projects and Skills' type='submit'
+            style={{borderColor:"#F8DE08",borderWidth:'1.3px',borderRadius:'4px',fontWeight:'bold',cursor:'pointer'}}>
             Learn More
           </span>
         </div>
