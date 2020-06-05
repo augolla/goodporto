@@ -1,0 +1,44 @@
+.ContactMe{
+  border: 1.5px solid #08FDD8;
+  height:50px;
+  background:#0C0F15;
+  color: #CACACA;
+  letter-spacing: 16px;
+  font-family:'Bebas Neue';
+  font-size: 1.2rem;
+}
+.ContactMain{
+  margin-top: -45px;
+  background: #0C0F15;
+  height: 750px;
+}
+.ContactMain h5,h6{
+  color: #CACACA;
+}
+
+.EmailForm input,textarea{
+  border-radius:1px;
+  background:#2B2B2B;
+  border-top:0;
+  border-right:0;
+  border-left:0;
+  border-color:#08FDD8;
+  min-height:40px;
+  caret-color:#08FDD8
+}
+.EmailForm textarea{
+  background:#2B2B2B;
+  border-color:#08FDD8;
+  border-radius:1px;
+  border-top:0;
+  border-right:0;
+  border-left:0;
+  min-height: 150px;
+}
+
+.submitbtn:hover{
+  background-color: #08FDD8;
+  color:#212022;
+  border-color: #212022;
+  box-shadow:0px 0px 20px #08FDD8;
+}

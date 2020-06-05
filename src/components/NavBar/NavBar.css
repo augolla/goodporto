@@ -1,0 +1,33 @@
+nav{
+  height:70px;
+  align-items: center;
+  background: #0C0F15;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #08FDD8;
+}
+nav a{
+  color:#212022;
+  transition: .4s ease;
+  font-size: 10px;
+}
+nav a:hover{
+  color:#FFFBF4;
+  transform: scale(0.8);
+  text-decoration-color: #FFFBF4;
+}
+nav a.active{
+  color:#FFFBF4;
+  transform: scale(1.2);
+  font-weight: bold;
+}
+.bars{
+  transition: .3s ease;
+}
+.bars:hover{
+  transform: scale(1.4);
+}
+
+
+/*NavIcon*/

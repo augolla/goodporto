@@ -1,43 +1,77 @@
 import React,{useState} from 'react'
 
 function EmailContact() {
-  const [inputStyle,setInputStyle]=useState({
-    borderRadius:"1px",
-    background:"#2B2B2B",
-    borderTop:'0',
-    borderRight:"0",
-    borderLeft:"0",
-    borderColor:"#F8DE08",
-    minHeight:'50px',
-    caretColor:'#F8DE08'
+  const [form,setForm]=useState({
+    name:'',
+    email:'',
+    subject:'',
+    message:''
   })
+  const handleName=(event)=>{
+    setForm({name:event.target.value})
+  }
+  const handleEmail=(event)=>{
+    setForm({name:event.target.value})
+  }
+  const handleSubject=(event)=>{
+    setForm({name:event.target.value})
+  }
+  const handleMessage=(event)=>{
+    setForm({name:event.target.value})
+  }
+
+  const handleSubmit=(event)=>{
+    event.preventDefault()
+    console.log(form);
+    fetch('http://localhost:3000/send',{
+        method: "POST",
+        body: JSON.stringify(this.state),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      }).then(
+    	(response) => (response.json())
+       ).then((response)=>{
+      if (response.status === 'success'){
+        alert("Message Sent.");
+        this.resetForm()
+      }else if(response.status === 'fail'){
+        alert("Message failed to send.")
+      }
+    })
+  }
+
   return (
-      <div className='Email'
-      style={{marginTop:'40px',marginRight:'2px',width:'90%',background:'#212022',color:'#CACACA',padding:'20PX'}}>
-        <div>
-          <h4>Email:</h4><h6>austinandogola@gmail.com</h6>
-        </div>
+      <div className='Email'>
         <div className='d-flex justify-content-center'>
-          <form className='row' style={{width:'100%'}}>
-            <div className='form-group col-12 col-md-6' >
-              <label>Name:</label>
-              <input style={inputStyle}placeholder="Your name(Optional)" className='form-control' />
+          <form className="EmailForm row" onSubmit={handleSubmit}>
+            <div className='col-12 col-md-6 mb-4'>
+              <label htmlFor='name' className='m-0'>Name</label>
+              <input className='form-control shadow-none'placeholder='Your name(optional)' name='name' type='text'
+              onChange={handleName}/>
             </div>
-            <div className='form-group col-12 col-md-6'>
-              <label >Email:</label>
-              <input style={inputStyle} type='email' placeholder="Email" className='form-control' />
+            <div className='col-12 col-md-6 mb-2'>
+              <label htmlFor='email' className='m-0'>Email</label>
+              <input className='form-control shadow-none'placeholder='Email address' name='email' type='email'
+                onChange={handleEmail}/>
             </div>
-            <div className='form-group col-12 '>
-              <input style={inputStyle} type='text' id='' placeholder="Subject" className='form-control' />
+            <div className='col-12 col-md-6 mb-2'>
+              <label htmlFor='subject' className='m-0'>Subject</label>
+              <input className='form-control shadow-none 'placeholder='Subject(optional)' name='subject' type='text'
+                onChange={handleSubject}/>
             </div>
-            <div className='form-group col-12' >
-              <textarea style={inputStyle} placeholder="Message" className='form-control form-control-lg' ></textarea>
+            <div className='col-5'></div>
+            <div className='col-12 col-md-6 mb-2'>
+              <label htmlFor='message' className='m-0'>Message</label>
+              <textarea className='form-control shadow-none'placeholder='Message' name='message' type='text'
+                onChange={handleMessage}/>
             </div>
-            <div className='col-4'>
-              <span className='submitbtn btn 'title='See projects and Skills'
-                style={{borderColor:"#F8DE08",borderWidth:'1.1px',borderRadius:'2px',fontWeight:'bold',cursor:'pointer'}}>
+            <div className='col-12'>
+              <button className='submitbtn btn 'title='Send email' type='submit'
+                style={{borderColor:"#08FDD8",borderWidth:'1.1px',borderRadius:'2px',fontWeight:'bold',cursor:'pointer'}}>
                 Send
-              </span>
+              </button>
             </div>
           </form>
         </div>

@@ -1,15 +1,14 @@
 import React from 'react'
-import Scroll from 'react-scroll'
+// import Scroll from 'react-scroll'
 
 import NavBar from './NavBar/NavBar'
 import Home from './Home/Home'
 import About from './About/About'
 import Projects from './Projects/Projects'
 import Contacts from './Contacts/Contacts'
-import $ from 'jquery'
 
 
-const scrollLink=Scroll.ScrollLink
+// const scrollLink=Scroll.ScrollLink
 function Whole() {
 //   $("nav").find("a").click(function(e) {
 //     e.preventDefault();

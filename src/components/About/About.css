@@ -1,0 +1,43 @@
+.About{
+  background: #0C0F15;
+  padding-top:80px;
+}
+.AboutHeader{
+  font-size:25px;
+  font-weight: bolder;
+  color:#08FDD8;
+  letter-spacing: 4px;
+}
+.AboutHeader span{
+  color:white;
+  padding-bottom: 5px;
+  border-bottom:2px solid #08FDD8;
+}
+
+.AboutMe{
+  background:"#8E8E8E";
+  line-height:1.2;
+}
+.AboutMe p,h2{
+  color: white;
+}
+/* .AboutMe h2{
+  font-size: 2.5rem;
+  font-family: arial;
+  font-weight: normal;
+} */
+/* .AboutMe p{
+  color: #2B2B2B;
+  font-size: 1.2rem;
+  font-weight:100;
+}
+.AboutMe a{
+  color: #F8DE08;
+  transition: all .25s ease-in-out;
+  font-family:courier;
+} */
+.AboutMe a:hover{
+  text-decoration: none;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}

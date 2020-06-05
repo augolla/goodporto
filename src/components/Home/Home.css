@@ -1,0 +1,49 @@
+.Home{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.name{
+  color: #CACACA;
+}
+.Home .left{
+  float: left;
+  position: absolute;
+  left:1%;
+}
+.Home .right{
+  float: right;
+  position: absolute;
+  right:1%;
+}
+
+.main p{
+  transition: .4s;
+  color: #08FDD8;
+}
+.main p:hover{
+  text-shadow: -3px 0px 18px #08FDD8;
+}
+
+h2{
+  font-family:'Bebas Neue';
+  letter-spacing:.9rem
+}
+
+.homebtn{
+  border-color:#08FDD8;
+  color: #08FDD8;
+  border-width:1.2px;
+  border-radius:2px;
+  font-weight:bold;
+  cursor:pointer;
+  font-weight:500;
+  letter-spacing: 2px;
+}
+.homebtn:hover{
+  background-color: #08FDD8;
+  color:#212022;
+  border-color: #08FDD8;
+  transform: scale(1.05);
+  /* box-shadow:0px 0px 20px #08FDD8; */
+}
