@@ -18,11 +18,11 @@
 }
 
 .main p{
-  transition: .4s;
+  transition: .3s;
   color: #08FDD8;
 }
 .main p:hover{
-  text-shadow: -3px 0px 18px #08FDD8;
+  text-shadow: -3px 0px 15px #08FDD8,-3px 0px 15px #08FDD8,-3px 0px 15px #08FDD8
 }
 
 h2{
@@ -31,19 +31,33 @@ h2{
 }
 
 .homebtn{
-  border-color:#08FDD8;
-  color: #08FDD8;
-  border-width:1.2px;
+  border:1.2px solid #08FDD8 ;
   border-radius:2px;
-  font-weight:bold;
+  color: white;
   cursor:pointer;
-  font-weight:500;
+  background-image: linear-gradient(to right, #292F38 50%, #08FDD8 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.homebtn a{
+  color: white;
   letter-spacing: 2px;
+  font-weight:500;
+  transition: all 0.3s ease-out;
+}
+.homebtn:hover> a{
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
 }
 .homebtn:hover{
-  background-color: #08FDD8;
-  color:#212022;
-  border-color: #08FDD8;
-  transform: scale(1.05);
-  /* box-shadow:0px 0px 20px #08FDD8; */
+  background-position: -99.99% 0;
+  transform: scale(1.05)
 }

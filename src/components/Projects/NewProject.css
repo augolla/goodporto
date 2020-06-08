@@ -1,0 +1,45 @@
+.ProjectZote{
+  min-height:180px;
+  margin-bottom:25px;
+}
+.ProjectMoja{
+  background:#1E2329;
+  width:100%;
+  color:white;
+  transition: .45s;
+}
+.ProjectMoja:hover{
+  transform: scale(1.1);
+}
+
+.PopupShow{
+  background: #CACAF1;
+  color: black;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+.ProjectMoja:hover > .PopupShow{
+  height: 100%;
+  width: 100%
+}
+
+.btn{
+  border: 1.2px solid #08FDD8;
+  background: inherit;
+  color: black;
+  border-radius: 1px;
+  transition: 0.3s ease-out;
+}
+.btn:hover{
+  background: #08FDD8;
+}
+.Technologies{
+  background: #1E2329;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

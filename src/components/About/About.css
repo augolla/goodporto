@@ -1,25 +1,75 @@
 .About{
-  background: #0C0F15;
+  background: #292F38;
   padding-top:80px;
+  padding-left: 0px;
+  padding-right:0px;
 }
 .AboutHeader{
   font-size:25px;
   font-weight: bolder;
   color:#08FDD8;
   letter-spacing: 4px;
+  margin-bottom: 30px;
 }
 .AboutHeader span{
   color:white;
   padding-bottom: 5px;
   border-bottom:2px solid #08FDD8;
 }
+.AboutParagraph button{
+  background: #292F38;
+  border: #292F38;
+  outline: none;
+  animation-delay: .5s;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+.btn2{
+  animation-delay: .8s;
+  animation-duration: 3s;
+}
+.AboutParagraph button:hover{
+  animation: none;
+}
+.AboutParagraph a{
+  color:#08FDD8;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+.AboutParagraph a:hover{
+  color:#08FDD8;
+  text-shadow: -3px 0px 15px #08FDD8,-3px 0px 15px #08FDD8,-3px 0px 15px #08FDD8;
+  animation-duration: 1s;
+  transform: scale(2);
+}
+
 
 .AboutMe{
-  background:"#8E8E8E";
-  line-height:1.2;
+  background:"#292F38";
+  display: flex;
+  justify-content: center;
 }
 .AboutMe p,h2{
   color: white;
+}
+
+.WhatIDo{
+  background: white;
+  min-height: 300px;
+}
+.Skills{
+  font-size:25px;
+  font-weight: bolder;
+  color:#05C2C9;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  padding-top:10px;
+  border-top:1.5px solid #08FDD8;
+}
+.Skills span{
+  color:#292F38;
+  padding-bottom: 5px;
+  border-bottom:2px solid #08FDD8;
 }
 /* .AboutMe h2{
   font-size: 2.5rem;
@@ -36,8 +86,11 @@
   transition: all .25s ease-in-out;
   font-family:courier;
 } */
-.AboutMe a:hover{
-  text-decoration: none;
-  font-size: 1.3rem;
-  letter-spacing: 1.5px;
+.Card{
+  background:#212022;
+  height:350px;
+  width:120%;
+  border-radius:2%;
+  padding:10px;
+  z-index:1
 }

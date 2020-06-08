@@ -2,9 +2,11 @@ import React from 'react'
 import './Home.css'
 import NavBar from '../NavBar/NavBar'
 
+import {Link} from 'react-router-dom'
+
 function Home() {
   return (
-    <div className='container-fluid Home' style={{height:'800px',background:'#0C0F15',color:'#CACACA'}}>
+    <div className='container-fluid Home' style={{height:'800px',background:'#292F38',color:'#CACACA'}}>
       <NavBar/>
       <div className='main'>
         <h2 className='display-4 name'>AUSTIN OGOLA</h2>
@@ -17,7 +19,7 @@ function Home() {
         </div>
         <div className='d-flex align-items-centre justify-content-center mt-5'>
           <span className='homebtn btn'title='See projects and Skills'>
-            Learn More
+            <Link to='/projects'>Learn More</Link>
           </span>
         </div>
       </div>
