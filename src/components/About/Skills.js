@@ -14,9 +14,15 @@ function Skills() {
         </div>
       </div>
       <div className='row'>
-        <SkillList icon=<Webdesign/> title="Responsive Webdesign" />
-        <SkillList icon=<Code/> title="Full-Stack Development"/>
-        <SkillList icon=<AiBrain/> title="Artificial Intelligence"/>
+        <SkillList icon=<Webdesign/>
+        title="Responsive Webdesign"
+        tools="HTML/CSS | Bootstrap | Photoshop | AdobeXD"/>
+        <SkillList icon=<Code/>
+        title="Full-Stack Development"
+        tools='HTML/CSS | Javascript | React | Node | GrpahQl | Express | JQuery | MongoDB | MySQL'/>
+        <SkillList icon=<AiBrain/>
+        title="Artificial Intelligence"
+        tools='Python | Tensorflow | Pytorch | OpenCV | Pandas | Numpy | Scipy'/>
       </div>
     </div>
   );

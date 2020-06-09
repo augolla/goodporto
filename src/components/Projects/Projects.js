@@ -2,7 +2,6 @@ import React from 'react'
 import './Projects.css'
 import NavBar from '../NavBar/NavBar'
 import NewProject from './NewProject'
-import Projos from './Projos'
 
 function Projects() {
   return (

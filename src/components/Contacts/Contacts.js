@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contacts.css'
+import {FiPhone,FiAtSign} from 'react-icons/fi'
 import NavBar from '../NavBar/NavBar'
 import EmailContact from './EmailContact'
 
@@ -15,10 +16,10 @@ function Contacts() {
        </div>
      </div>
      <div className='ContactMain container'>
-       <div className='mt-4 pt-4'>
+       <div className=' pt-4' style={{marginTop:'100px'}}>
          <h5>Reach Me:</h5>
-         <h6><span>@: </span> austinandogola@gmail.com</h6>
-         <h6><span>Ph: </span>+254706459913</h6>
+         <h6><span><FiAtSign color="#08FDD8"/>: </span> austinandogola@gmail.com</h6>
+         <h6><span><FiPhone color="#08FDD8"/>: </span>+254706459913</h6>
          <div className='container'>
            <EmailContact/>
          </div>
